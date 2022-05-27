@@ -1,0 +1,106 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .li-class {
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .li-class li,
+    span {
+        background-color: red;
+        height: 50px;
+        width: 50px;
+        list-style: none;
+        margin: 10px;
+        font-size: 22px;
+    }
+    
+    .li-class li:nth-child(1n),
+    span:nth-child(1n) {
+        background-color: green;
+    }
+    
+    .li-class li:nth-child(2n),
+    span:nth-child(2n) {
+        background-color: red;
+    }
+    
+    @media (max-width:319px) {
+        li:nth-child(1n),
+        span:nth-child(1n) {
+            background-color: red;
+            width: 20px;
+        }
+        li:nth-child(2n),
+        span:nth-child(2n) {
+            background-color: green;
+            width: 30px;
+        }
+        body {
+            background-color: rebeccapurple;
+        }
+    }
+    
+    @media (min-width:321px) and (max-width:425px) {
+        li:nth-child(1n),
+        span:nth-child(1n) {
+            background-color: yellow;
+            width: 20px;
+        }
+        li:nth-child(2n),
+        span:nth-child(2n) {
+            background-color: red;
+            width: 50px;
+        }
+        body {
+            background-color: rebeccapurple;
+        }
+    }
+    
+    @media (min-width:426px) and (max-width:768px) {
+        li:nth-child(1n),
+        span:nth-child(1n) {
+            background-color: rgb(53, 88, 32);
+            width: 30px;
+        }
+        li:nth-child(2n),
+        span:nth-child(2n) {
+            background-color: yellow;
+            width: 40px;
+        }
+        body {
+            background-color: rebeccapurple;
+        }
+    }
+    
+    @media (min-width:769px) and (max-width:992px) {
+        li:nth-child(1n),
+        span:nth-child(1n) {
+            background-color: yellow;
+            width: 30px;
+        }
+        li:nth-child(2n),
+        span:nth-child(2n) {
+            background-color: deeppink;
+            width: 40px;
+        }
+    }
+    
+    @media (min-width:993px) and (max-width:1200px) {
+        li:nth-child(1n),
+        span:nth-child(1n) {
+            background-color: rebeccapurple;
+            width: 50px;
+        }
+        li:nth-child(2n),
+        span:nth-child(2n) {
+            background-color: violet;
+            width: 100px;
+        }
+    }
